@@ -9,16 +9,16 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
     line-height: 1.4;
+    font-size: 1em;
+    color: #222;
 }
 body {
-    background-color: #fff;
     width: 1580px;
     height: auto;
     font-size: 14px;
     font-weight: 400;
+    background: #fff;
 }
 h1 {
     font-size: 32px;
@@ -113,85 +113,124 @@ h3 {
 .homepage {
     margin: 0;
 }
-header {
-    margin: 0px;
-}
+/* Container */
+
 .container {
     padding: 40px;
 }
-nav {
-    margin: 8px 20px 0 20px;
-    display: inline-block;
-    float: right;
-    font-size: 12px;
-    letter-spacing: 0.7px;
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+    margin: 0;
 }
+/* Logo */
+
 .logo img {
     margin-left: 0;
     display: inline-block;
 }
-ul {
-    padding: 0px;
+/* Navigation
+   ========================================================================== */
+
+nav {
+    float: right;
+    margin: 8px 12px 0 12px;
+    letter-spacing: 0.7px;
+    font-size: 12px;
 }
-li {
+nav ul {
+    padding: 0;
+}
+nav li {
     list-style: none;
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 8px;
 }
-li a {
+nav li a {
+    padding: 8px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
     color: #000;
 }
-li a:hover {
-    text-decoration: underline;
+nav li a:hover {
+    padding: 8px;
+    background: #000;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.5s ease;
 }
 nav li.current {
     text-decoration: underline;
 }
-nav li.last {
-    margin-right: 0px;
-    padding-right: 0px;
+nav li:last-child {
+    padding-right: 0;
+    margin-right: 0;
 }
+/* Banner */
+
 .banner {
-    margin: 0px 1px;
     padding: 350px;
-    margin-bottom: 30px;
+    margin: 0 1px 30px 1px;
     background: #fff url(../img/header.png) no-repeat center;
     background-size: cover;
+}
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+    margin: 0;
 }
 section {
     padding: 20px;
     margin: 10px auto 30px auto;
 }
-section > h2 {
-    text-align: center;
+section .title h2 {
     margin-bottom: 40px;
+    text-align: center;
     color: #5A5B5B;
 }
 section p {
-    font-size: 18px;
-    color: #989999;
-    font-weight: 300;
     line-height: 26px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #989999;
 }
-#whoarewe {
+/* Section who we are
+   ========================================================================== */
+
+.who-are-we {
     width: 650px;
     text-align: center;
 }
-#projects {
+/* Section projects
+   ========================================================================== */
+
+.projects {
     width: 920px;
 }
-#col1 {
+.projects a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #8D716C;
+}
+.projects a:hover {
+    text-decoration: underline;
+}
+/* Pictures of project */
+
+.pic1 {
     float: left;
     width: 33%;
 }
-#col2 {
+.pic2 {
     display: inline-block;
     width: 33%;
 }
-#col3 {
+.pic3 {
     float: right;
     width: 33%;
 }
@@ -202,31 +241,40 @@ figcaption {
     margin-top: 12px;
     margin-bottom: 4px;
     font-size: 16px;
-    color: #757879;
     text-align: left;
+    color: #757879;
 }
-section a {
-    text-decoration: none;
-    color: #8D716C;
-    font-size: 12px;
-}
-section a:hover {
-    text-decoration: underline;
-}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
 footer {
     margin-bottom: 50px;
     font-size: 12px;
     color: #757879;
 }
 .container-footer {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 0;
     border-top: 1px #D4DADB solid;
 }
-.footer-left {
+/* Copyright */
+
+.copyright {
     float: left;
 }
-.footer-right {
+/* Media */
+
+.media {
     float: right;
+}
+.media ul {
+    margin: 0;
+    padding: 0;
+}
+.media li {
+    list-style: none;
+    display: inline;
+    padding: 0 5px;
 }
 .fa {
     color: #E1E5E6;
